@@ -12,6 +12,9 @@ compinit
 unsetopt beep
 bindkey -v
 
+## Rbenv, the ruby version manager, switcher and installer
+eval "$($HOME/.rbenv/bin/rbenv init - zsh)"
+
 ## Aliases. Can be shared with bash
 source $HOME/.config/zsh/aliases
 
