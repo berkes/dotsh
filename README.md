@@ -1,0 +1,2 @@
+# dotsh
+My shell config
