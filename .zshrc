@@ -5,3 +5,6 @@ autoload -Uz compinit
 compinit
 unsetopt beep
 bindkey -v
+
+## Aliases. Can be shared with bash
+source $HOME/.config/zsh/aliases

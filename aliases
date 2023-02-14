@@ -1,0 +1,67 @@
+alias pw='pwgen -y 16'
+alias rm='trash-put'
+alias e=nvim
+alias eg=nvim-gtk
+alias o=xdg-open
+alias ds='date +%F-%s'
+alias m='make'
+alias wl='wc -l'
+alias @='echo "ber@berk.es" | xclip'
+alias lipsum='curl --silent https://loripsum.net/api | xclip'
+
+# Git
+alias g=git
+alias gp="git push"
+alias gpf="git push --force-with-lease"
+alias gf="git flow"
+alias git-clean-merged="git checkout develop && git pull && git branch -d @{-1}"
+
+# env
+alias dotenv='dotenv-rust'
+
+# bundle exec
+alias b='bundle exec'
+alias r='bundle exec rake'
+alias tp='parallel bundle exec rake test:{} ::: units controllers integration'
+
+# yarn and node
+alias n='npx'
+alias ye='yarn exec'
+
+alias otp='oathtool --totp -b -d 6'
+alias server='ruby -run -e httpd . -p 8080'
+# Ledger/Beancount/Accounting
+alias add-expense='ruby ~/Administratie/beancount/add.rb expense'
+# network
+alias wanip='dig @resolver1.opendns.com ANY myip.opendns.com +short'
+# tools
+alias bat=batcat
+
+# Todotxt
+alias todotxt='ttdl'
+alias t='ttdl'
+alias td='ttdl list'
+alias tdt='ttdl list @today'
+alias tda='ttdl add'
+alias tdi0='ttdl add inbox 0 @today'
+
+# Coreutils
+alias ls=exa
+alias l=exa
+alias ll='ls -ahlF --git'
+alias la='ls -A'
+alias lt='ll --tree'
+alias cat='bat'
+
+# Cargo and Rust
+alias cr='cargo run'
+alias cb='cargo build'
+alias cc='cargo check'
+alias cca='cargo check --all --tests'
+alias cf='cargo fmt --all -- --check'
+alias cta='cargo test --all'
+alias ctf='cargo test --test features'
+
+# Tools
+alias plantuml='java -jar /home/ber/src/plantuml.jar'
+
