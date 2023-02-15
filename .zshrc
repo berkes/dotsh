@@ -25,3 +25,6 @@ cdpath=($HOME/Documenten)
 ## PATH settings
 ### Add .local/bin
 path+=$HOME/.local/bin
+
+### Add golang
+path+=/usr/local/go/bin
