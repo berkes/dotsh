@@ -32,3 +32,11 @@ path+=$HOME/.local/bin
 
 ### Add golang
 path+=/usr/local/go/bin
+
+## App and tool configuration
+
+### FZF
+# Setting fd as the default source for fzf
+# fd is an alias for fdfind, we use the canonical, non-aliased for portability
+export FZF_DEFAULT_COMMAND='fdfind --type f --strip-cwd-prefix'
+export FZF_DEFAULT_OPTS='--preview "batcat --color=always --decorations=never {}"'
