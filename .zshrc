@@ -12,6 +12,12 @@ compinit
 unsetopt beep
 bindkey -v
 
+## RE-implement CTRL-P as up in vim insert mode (our default, see above)
+# An alternative would be normal up-history, but we bind it to atuin.
+# The alternative is:
+# bindkey -M viins '^p' up-history
+bindkey -M viins '^p' _atuin_search_widget
+
 ## Rbenv, the ruby version manager, switcher and installer
 eval "$($HOME/.rbenv/bin/rbenv init - zsh)"
 
