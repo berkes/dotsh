@@ -52,6 +52,7 @@ alias ll='ls -ahlF --git'
 alias la='ls -A'
 alias lt='ll --tree'
 alias cat='bat'
+alias fd=fdfind
 
 # Cargo and Rust
 alias cr='cargo run'
