@@ -15,6 +15,10 @@ bindkey -v
 ## Rbenv, the ruby version manager, switcher and installer
 eval "$($HOME/.rbenv/bin/rbenv init - zsh)"
 
+## NVM, the node version manager.
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 ## Aliases. Can be shared with bash
 source $HOME/.config/zsh/aliases
 
