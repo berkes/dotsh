@@ -43,7 +43,8 @@ alias t='ttdl'
 alias td='ttdl list'
 alias tdt='ttdl list @today'
 alias tda='ttdl add'
-alias tdi0='ttdl add inbox 0 @today'
+alias tdue='ttdl list --due="..3d.."'
+alias tdi0='ttdl add "inbox 0 due:$(date +%F) @today"'
 
 # Coreutils
 alias ls=exa
@@ -65,4 +66,3 @@ alias ctf='cargo test --test features'
 
 # Tools
 alias plantuml='java -jar /home/ber/src/plantuml.jar'
-
