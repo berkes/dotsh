@@ -49,7 +49,8 @@ alias tdi0='ttdl add "inbox 0 due:$(date +%F) @today"'
 # Coreutils
 alias ls=exa
 alias l=exa
-alias ll='ls -ahlF --git'
+alias ll='ls -hlF --git'
+alias lll='ll --all'
 alias la='ls -A'
 alias lt='ll --tree'
 alias cat='bat'
