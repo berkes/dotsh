@@ -4,6 +4,9 @@ eval "$(starship init zsh)"
 ## Enable Atuin for history management and sync
 eval "$(atuin init zsh)"
 
+## Add the local completions directory to the fpath
+fpath=($HOME/.config/zsh/completions/ $fpath)
+
 zstyle ':completion:*' completer _complete _ignored
 zstyle :compinstall filename '/home/ber/.zshrc'
 
