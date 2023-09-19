@@ -18,6 +18,7 @@ alias git-clean-merged="git checkout develop && git pull && git branch -d @{-1}"
 
 # env
 alias dotenv='dotenv-rust'
+alias loadenv='while IFS= read -r line; do export "$line"; done < .env'
 
 # bundle exec
 alias b='bundle exec'
