@@ -15,6 +15,15 @@ compinit
 unsetopt beep
 bindkey -v
 
+## Enable bash completion scripts
+autoload -Uz bashcompinit
+bashcompinit
+# Load everything in ~.local/share/bash-completion/completions
+for f in ~/.local/share/bash-completion/completions/*; do
+  source $f
+done
+
+
 ## RE-implement CTRL-P as up in vim insert mode (our default, see above)
 # An alternative would be normal up-history, but we bind it to atuin.
 # The alternative is:
