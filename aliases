@@ -63,9 +63,10 @@ alias cb='cargo build'
 alias cc='cargo check'
 alias cca='cargo check --all --tests'
 alias cf='cargo fmt --all -- --check'
-alias cta='cargo test --all -- --color never'
+alias cta='cargo test --all'
 alias ctf='cargo test --test features'
 alias cfa='cargo fmt --all && cargo fix --all  --allow-staged --allow-dirty && cargo clippy --all --fix  --allow-staged --allow-dirty'
+alias cfA='cargo fmt --all && cargo fix --all  --allow-staged --allow-dirty && cargo clippy --all --fix  --allow-staged --allow-dirty -- -W clippy::pedantic'
 
 # Tools
 alias plantuml='java -jar /home/ber/src/plantuml.jar'
