@@ -73,3 +73,6 @@ alias pyr='pipenv run'
 
 # Tools
 alias plantuml='java -jar /home/ber/src/plantuml.jar'
+
+# OS
+alias z='xdg-screensaver lock'
