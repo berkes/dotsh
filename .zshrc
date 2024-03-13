@@ -51,6 +51,9 @@ path+=$HOME/.local/bin
 ### Add golang
 path+=/usr/local/go/bin
 
+### Add deno 
+path+=$HOME/.deno/bin
+
 ## App and tool configuration
 
 ### FZF
