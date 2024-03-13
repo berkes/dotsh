@@ -68,5 +68,8 @@ alias ctf='cargo test --test features'
 alias cfa='cargo fmt --all && cargo fix --all  --allow-staged --allow-dirty && cargo clippy --all --fix  --allow-staged --allow-dirty'
 alias cfA='cargo fmt --all && cargo fix --all  --allow-staged --allow-dirty && cargo clippy --all --fix  --allow-staged --allow-dirty -- -W clippy::pedantic'
 
+# Python and pipenv
+alias pyr='pipenv run'
+
 # Tools
 alias plantuml='java -jar /home/ber/src/plantuml.jar'

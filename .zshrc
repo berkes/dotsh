@@ -62,3 +62,5 @@ export FZF_DEFAULT_OPTS='--preview "batcat --color=always --decorations=never {}
 ### Bartib
 export BARTIB_FILE="$HOME/.local/share/bartib/activities.bartib"
 
+### Pipenv
+PIPENV_QUIET=1 #shut up pipenv from printing it's messages to stderr which are not errors
