@@ -91,3 +91,5 @@ load-nvmrc() {
 
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+
+. "$HOME/.atuin/bin/env"
