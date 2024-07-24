@@ -46,6 +46,7 @@ path+=$HOME/.local/bin
 
 ### Add golang
 path+=/usr/local/go/bin
+path+=/home/ber/go/bin
 
 ### Add deno 
 path+=$HOME/.deno/bin
