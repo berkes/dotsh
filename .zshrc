@@ -38,7 +38,7 @@ source $HOME/.config/zsh/aliases
 
 ## CDPATH, for quick CD-ing into anything under documents
 setopt auto_cd
-cdpath=($HOME/Documenten)
+cdpath=($HOME/Documents)
 
 ## PATH settings
 ### Add .local/bin
