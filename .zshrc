@@ -94,3 +94,14 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 . "$HOME/.atuin/bin/env"
+
+## Set the title of the terminal
+# Use the current directory as the title of the terminal
+# But replace the home directory with ~
+function set-title() {
+  echo -ne "\033]0;${1//${HOME}/~}\007"
+}
+
+precmd() {
+  set-title $PWD
+}
