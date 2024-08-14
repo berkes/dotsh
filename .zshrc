@@ -4,6 +4,9 @@ eval "$(starship init zsh)"
 ## Enable Atuin for history management and sync
 eval "$(atuin init zsh)"
 
+## Enable zoxide, the directory jumping tool
+eval "$(zoxide init zsh)"
+
 ## Add the local completions directory to the fpath
 fpath=($HOME/.config/zsh/completions/ $fpath)
 
