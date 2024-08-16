@@ -47,6 +47,10 @@ alias tda='ttdl add'
 alias tdue='ttdl list --due="..3d.."'
 alias tdi0='ttdl add "inbox 0 due:$(date +%F) @today"'
 
+# Timetracking - Bartib
+alias bt='bartib'
+alias btl='bartib last'
+
 # Coreutils
 alias ls=exa
 alias l=exa
