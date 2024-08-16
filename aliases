@@ -29,7 +29,6 @@ alias tp='parallel bundle exec rake test:{} ::: units controllers integration'
 alias n='npx'
 alias ye='yarn exec'
 
-alias otp='oathtool --totp -b -d 6'
 alias server='ruby -run -e httpd . -p 8080'
 # Ledger/Beancount/Accounting
 alias add-expense='ruby ~/Administratie/beancount/add.rb expense'
