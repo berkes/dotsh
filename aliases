@@ -60,6 +60,8 @@ alias la='ls -A'
 alias lt='ll --tree'
 alias cat='bat'
 alias fd=fdfind
+alias cd=z
+alias ci=zi
 
 # Cargo and Rust
 alias cr='cargo run'

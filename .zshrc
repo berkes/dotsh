@@ -4,9 +4,6 @@ eval "$(starship init zsh)"
 ## Enable Atuin for history management and sync
 eval "$(atuin init zsh)"
 
-## Enable zoxide, the directory jumping tool
-eval "$(zoxide init zsh)"
-
 ## Add the local completions directory to the fpath
 fpath=($HOME/.config/zsh/completions/ $fpath)
 
@@ -97,6 +94,10 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 . "$HOME/.atuin/bin/env"
+
+## Enable zoxide, the directory jumping tool
+# Must be somewhere at the end, after compinit and PATH and such
+eval "$(zoxide init zsh --cmd=cd)"
 
 ## Set the title of the terminal
 # Use the current directory as the title of the terminal
