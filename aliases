@@ -51,7 +51,7 @@ alias btl='bartib last'
 # Coreutils
 alias ls=exa
 alias l=exa
-alias ll='ls -hlF --git'
+alias ll='ls -hlF --icons --git'
 alias lll='ll --all'
 alias la='ls -A'
 alias lt='ll --tree'
