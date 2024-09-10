@@ -23,7 +23,6 @@ alias loadenv='while IFS= read -r line; do export "$line"; done < .env'
 # bundle exec
 alias b='bundle exec'
 alias r='bundle exec rake'
-alias tp='parallel bundle exec rake test:{} ::: units controllers integration'
 
 # yarn and node
 alias n='npx'
