@@ -35,8 +35,6 @@ alias add-expense='ruby ~/Administratie/beancount/add.rb expense'
 # network
 alias wanip='dig @resolver1.opendns.com ANY myip.opendns.com +short'
 alias up='ping -c3 example.com'
-# tools
-alias bat=batcat
 
 # Todotxt
 alias todotxt='ttdl'
