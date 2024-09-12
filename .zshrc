@@ -7,6 +7,11 @@ eval "$(atuin init zsh)"
 ## Add the local completions directory to the fpath
 fpath=($HOME/.config/zsh/completions/ $fpath)
 
+## Source fzf completions and keybindings
+## See dpkg -L fzf for the location of the completions
+source /usr/share/doc/fzf/examples/completion.zsh
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+
 zstyle ':completion:*' completer _complete _ignored
 zstyle :compinstall filename '/home/ber/.zshrc'
 
@@ -22,7 +27,6 @@ bashcompinit
 for f in ~/.local/share/bash-completion/completions/*; do
   source $f
 done
-
 
 ## RE-implement CTRL-P as up in vim insert mode (our default, see above)
 # An alternative would be normal up-history, but we bind it to atuin.
