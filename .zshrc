@@ -7,10 +7,12 @@ eval "$(atuin init zsh)"
 ## Add the local completions directory to the fpath
 fpath=($HOME/.config/zsh/completions/ $fpath)
 
-## Source fzf completions and keybindings
-## See dpkg -L fzf for the location of the completions
-source /usr/share/doc/fzf/examples/completion.zsh
-source /usr/share/doc/fzf/examples/key-bindings.zsh
+##
+# Source fzf completions and keybindings
+# See dpkg -L fzf for the location of the completions
+# We copied these to be able to change them
+source $HOME/.config/zsh/fzf/key-bindings.zsh
+source $HOME/.config/zsh/fzf/completion.zsh
 
 zstyle ':completion:*' completer _complete _ignored
 zstyle :compinstall filename '/home/ber/.zshrc'
