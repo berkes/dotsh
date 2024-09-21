@@ -33,7 +33,7 @@ alias server='ruby -run -e httpd . -p 8080'
 alias add-expense='ruby ~/Administratie/beancount/add.rb expense'
 # network
 alias wanip='dig @resolver1.opendns.com ANY myip.opendns.com +short'
-alias up='ping -c3 example.com'
+alias up='ping -c 1 8.8.8.8 > /dev/null && echo "up! 😸" || echo "down 😿"'
 
 # Todotxt
 alias todotxt='ttdl'
