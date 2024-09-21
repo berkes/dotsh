@@ -28,7 +28,9 @@ alias r='bundle exec rake'
 alias n='npx'
 alias ye='yarn exec'
 
-alias server='ruby -run -e httpd . -p 8080'
+alias server.rb='ruby -run -e httpd . -p 8080'
+alias server="devserver --address 127.0.0.1:8080 --path '.' --header Access-Control-Allow-Origin='*'"
+
 # Ledger/Beancount/Accounting
 alias add-expense='ruby ~/Administratie/beancount/add.rb expense'
 # network
