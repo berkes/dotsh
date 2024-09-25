@@ -1,7 +1,6 @@
 alias pw='pwgen -y 16'
 alias rm='trash-put'
 alias e=nvim
-alias eg=nvim-gtk
 alias o=xdg-open
 alias ds='date +%F-%s'
 alias m='make'
