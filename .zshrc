@@ -30,6 +30,11 @@ for f in ~/.local/share/bash-completion/completions/*; do
   source $f
 done
 
+# Load all functions in .config/zsh/functions/
+for f in ~/.config/zsh/functions/*; do
+  source $f
+done
+
 ## RE-implement CTRL-P as up in vim insert mode (our default, see above)
 # An alternative would be normal up-history, but we bind it to atuin.
 # The alternative is:
@@ -111,7 +116,6 @@ eval "$(zoxide init zsh --cmd=cd)"
 function set-title() {
   echo -ne "\033]0;${1//${HOME}/~}\007"
 }
-
 precmd() {
   set-title $PWD
 }

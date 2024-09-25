@@ -1,0 +1,12 @@
+##
+# Load environment variables from a file into the current shell.
+function loadenv() {
+  local file="${1:-.env}"
+  while IFS= read -r line; do
+    # Skip comments and empty lines
+    if [[ "$line" =~ ^\s*# ]] || [[ "$line" =~ ^\s*$ ]]; then
+      continue
+    fi
+    export "$line"
+  done < "$file"
+}

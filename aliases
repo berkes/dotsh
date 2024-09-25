@@ -17,7 +17,6 @@ alias git-clean-merged='git branch --merged | grep -Ev "(^\*|master|main|dev|dev
 
 # env
 alias dotenv='dotenv-rust'
-alias loadenv='while IFS= read -r line; do export "$line"; done < .env'
 
 # bundle exec
 alias b='bundle exec'
