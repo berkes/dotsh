@@ -40,7 +40,7 @@ alias up='ping -c 1 8.8.8.8 > /dev/null && echo "up! 😸" || echo "down 😿"'
 alias todotxt='ttdl'
 alias t='ttdl'
 alias td='ttdl list'
-alias tdt='ttdl list @today && ttdl list --due=..today..
+alias tdt='ttdl list @today && ttdl list --due=..today..'
 alias tda='ttdl add'
 alias tdue='ttdl list --due="..3d.."'
 alias tdi0='ttdl add "inbox 0 due:$(date +%F) @today"'
