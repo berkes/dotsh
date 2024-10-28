@@ -67,8 +67,9 @@ path+=$HOME/.deno/bin
 ### FZF
 # Setting fd as the default source for fzf
 # fd is an alias for fdfind, we use the canonical, non-aliased for portability
-export FZF_DEFAULT_COMMAND='fdfind --type f --strip-cwd-prefix'
-export FZF_DEFAULT_OPTS='--preview "bat --color=always --decorations=never {}"'
+show_file_or_dir_preview="if [ -d {} ]; then exa --tree --color=always {} ; else bat --color=always --decorations=never {} ; fi"
+export FZF_CTRL_T_OPTS="--preview '$show_file_or_dir_preview'"
+export FZF_ALT_C_OPTS="--preview 'exa --tree --color=always {}' | head -n 200'"
 
 ### Bartib
 export BARTIB_FILE="$HOME/.local/share/bartib/activities.bartib"
