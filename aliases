@@ -3,7 +3,6 @@ alias rm='trash-put'
 alias e=nvim
 alias o=xdg-open
 alias ds='date +%F-%s'
-alias m='make'
 alias wl='wc -l'
 alias @='echo "ber@berk.es" | xclip'
 alias lipsum='curl --silent https://loripsum.net/api | xclip'
@@ -18,6 +17,10 @@ alias git-clean-merged='git branch --merged | grep -Ev "(^\*|master|main|dev|dev
 
 # env
 alias dotenv='dotenv-rust'
+
+# Make
+alias m='make'
+alias mt='make test'
 
 # bundle exec
 alias b='bundle exec'
