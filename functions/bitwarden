@@ -1,0 +1,13 @@
+## bw list items --search pam.ssh.poc | jq -r '. | first | .login.password' | xclip
+
+## Copy a BitWarden password to the clipboard
+bwc() {
+  bwp $1 | xclip
+}
+
+## Print a BitWarden password to the terminal
+bwp() {
+  bw list items --search $1 | jq -r '. | first | .login.password'
+}
+
+
