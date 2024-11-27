@@ -39,6 +39,11 @@ alias add-expense='ruby ~/Administratie/beancount/add.rb expense'
 alias wanip='dig @resolver1.opendns.com ANY myip.opendns.com +short'
 alias up='ping -c 1 8.8.8.8 > /dev/null && echo "up! 😸" || echo "down 😿"'
 
+# Docker
+alias dc='docker compose'
+alias dcu='docker compose up'
+alias dp='docker system prune'
+
 # Todotxt
 alias todotxt='ttdl'
 alias t='ttdl'
