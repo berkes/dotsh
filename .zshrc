@@ -80,6 +80,9 @@ export BARTIB_FILE="$HOME/.local/share/bartib/activities.bartib"
 ### Generative Art Projects
 export SAVES_LOCATION="${HOME}/Dropbox/genArt/"
 
+### Diodon, the clipboard manager
+export ZEITGEIST_DATABASE_PATH=:memory:
+
 ### Pipenv
 PIPENV_QUIET=1 #shut up pipenv from printing it's messages to stderr which are not errors
 
