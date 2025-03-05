@@ -62,6 +62,9 @@ path+=/home/ber/go/bin
 ### Add deno 
 path+=$HOME/.deno/bin
 
+### Add jdt-ls the java language server
+path+=$HOME/src/jdt-ls/bin
+
 ## App and tool configuration
 
 ### FZF
