@@ -52,6 +52,7 @@ alias tdt='ttdl list @today && ttdl list --due=..today..'
 alias tda='ttdl add'
 alias tdue='ttdl list --due="..3d.."'
 alias tdi0='ttdl add "inbox 0 due:$(date +%F) @today"'
+alias te='nvim ${HOME}/todo/todo.txt'
 
 # Timetracking - Bartib
 alias bt='bartib'
