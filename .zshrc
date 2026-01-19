@@ -70,8 +70,6 @@ export SAVES_LOCATION="${HOME}/Dropbox/genArt/"
 ### Diodon, the clipboard manager
 export ZEITGEIST_DATABASE_PATH=:memory:
 
-### Pipenv
-PIPENV_QUIET=1 #shut up pipenv from printing it's messages to stderr which are not errors
 
 ## NVM, the node version manager.
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
