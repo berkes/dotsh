@@ -25,10 +25,6 @@ bindkey -v
 ## Enable bash completion scripts
 autoload -Uz bashcompinit
 bashcompinit
-# Load everything in ~.local/share/bash-completion/completions
-for f in ~/.local/share/bash-completion/completions/*; do
-  source $f
-done
 
 # Load all functions in .config/zsh/functions/
 for f in ~/.config/zsh/functions/*; do
@@ -40,9 +36,6 @@ done
 # The alternative is:
 # bindkey -M viins '^p' up-history
 bindkey -M viins '^p' _atuin_search_widget
-
-## Rbenv, the ruby version manager, switcher and installer
-eval "$($HOME/.rbenv/bin/rbenv init - zsh)"
 
 ## Aliases. Can be shared with bash
 source $HOME/.config/zsh/aliases
@@ -59,9 +52,6 @@ path+=$HOME/.local/bin
 path+=/usr/local/go/bin
 path+=/home/ber/go/bin
 
-### Add deno 
-path+=$HOME/.deno/bin
-
 ### Add jdt-ls the java language server
 path+=$HOME/src/jdt-ls/bin
 
@@ -73,9 +63,6 @@ path+=$HOME/src/jdt-ls/bin
 show_file_or_dir_preview="if [ -d {} ]; then exa --tree --color=always {} ; else bat --color=always --decorations=never {} ; fi"
 export FZF_CTRL_T_OPTS="--preview '$show_file_or_dir_preview'"
 export FZF_ALT_C_OPTS="--preview 'exa --tree --color=always {}' | head -n 200'"
-
-### Bartib
-export BARTIB_FILE="$HOME/.local/share/bartib/activities.bartib"
 
 ### Generative Art Projects
 export SAVES_LOCATION="${HOME}/Dropbox/genArt/"
