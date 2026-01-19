@@ -72,7 +72,7 @@ export ZEITGEIST_DATABASE_PATH=:memory:
 
 autoload -U add-zsh-hook
 
-. "$HOME/.atuin/bin/env"
+eval "$(atuin init zsh)"
 
 ## Enable zoxide, the directory jumping tool
 # Must be somewhere at the end, after compinit and PATH and such
