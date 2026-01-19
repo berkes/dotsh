@@ -44,10 +44,12 @@ alias dc='docker compose'
 alias dcu='docker compose up'
 alias dp='docker system prune'
 
+alias pc='podman-compose'
+
 # Todotxt
 alias todotxt='ttdl'
 alias t='ttdl'
-alias td='ttdl list'
+alias tl='ttdl list -s "pri,due"'
 alias tdt='ttdl list @today && ttdl list --due=..today..'
 alias tda='ttdl add'
 alias tdue='ttdl list --due="..3d.."'
