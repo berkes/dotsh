@@ -1,3 +1,7 @@
+### Add rustup and cargo
+# Must preceide starship and atuin since those are installed w cargo
+path+=$HOME/.cargo/bin
+
 ## Enable starship, the cross-shell-prompt
 eval "$(starship init zsh)"
 
@@ -77,6 +81,9 @@ eval "$(atuin init zsh)"
 ## Enable zoxide, the directory jumping tool
 # Must be somewhere at the end, after compinit and PATH and such
 eval "$(zoxide init zsh --cmd=cd)"
+
+## Enable direnv, the automatic dir env loader
+eval "$(direnv hook zsh)"
 
 ## Set the title of the terminal
 # Use the current directory as the title of the terminal
