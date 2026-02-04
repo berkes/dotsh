@@ -52,10 +52,6 @@ cdpath=($HOME/Documents)
 ### Add .local/bin
 path+=$HOME/.local/bin
 
-### Add golang
-path+=/usr/local/go/bin
-path+=/home/ber/go/bin
-
 ### Add jdt-ls the java language server
 path+=$HOME/src/jdt-ls/bin
 
