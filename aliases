@@ -9,6 +9,9 @@ alias lipsum='curl --silent https://loripsum.net/api | xsel -i'
 alias dt="sed -i 's/[[:space:]]*$//g' " # delete trailing whitespace from a file
 alias clip=xsel -i
 
+# SURF
+alias vpn='eduvpn-cli connect -n 1'
+
 # Git
 alias g=git
 alias gp="git push"
