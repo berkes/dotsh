@@ -4,9 +4,10 @@ alias e=nvim
 alias o=xdg-open
 alias ds='date +%F-%s'
 alias wl='wc -l'
-alias @='echo "ber@berk.es" | xclip'
-alias lipsum='curl --silent https://loripsum.net/api | xclip'
+alias @='echo "ber@berk.es" | xsel -i'
+alias lipsum='curl --silent https://loripsum.net/api | xsel -i'
 alias dt="sed -i 's/[[:space:]]*$//g' " # delete trailing whitespace from a file
+alias clip=xsel -i
 
 # Git
 alias g=git
