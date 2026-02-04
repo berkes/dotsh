@@ -17,7 +17,6 @@ alias g=git
 alias gp="git push"
 alias gpf="git push --force-with-lease"
 alias gf="git flow"
-alias git-clean-merged='git branch --merged | grep -Ev "(^\*|master|main|dev|develop|staging)" | xargs git branch -d'
 
 # Make
 alias m='make'
