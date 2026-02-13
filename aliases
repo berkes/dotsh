@@ -30,12 +30,7 @@ alias gf="git flow"
 # Make
 alias mt='make test'
 
-# bundle exec
-alias b='bundle exec'
-alias r='bundle exec rake'
-
 # yarn and node
-alias n='npx'
 alias ye='yarn exec'
 
 alias server="devserver --address 127.0.0.1:8080 --path '.' --header Access-Control-Allow-Origin='*'"
