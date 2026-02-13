@@ -49,20 +49,6 @@ alias dp='docker system prune'
 
 alias pc='podman-compose'
 
-# Todotxt
-alias todotxt='ttdl'
-alias t='ttdl'
-alias tl='ttdl list -s "pri,due"'
-alias tdt='ttdl list @today && ttdl list --due=..today..'
-alias tda='ttdl add'
-alias tdue='ttdl list --due="..3d.."'
-alias tdi0='ttdl add "inbox 0 due:$(date +%F) @today"'
-alias te='nvim ${HOME}/todo/todo.txt'
-
-# Timetracking - Bartib
-alias bt='bartib'
-alias btl='bartib last'
-
 # Coreutils
 alias ls=exa
 alias l=exa
