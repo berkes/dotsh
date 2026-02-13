@@ -9,6 +9,9 @@ alias lipsum='curl --silent https://loripsum.net/api | xsel -i'
 alias dt="sed -i 's/[[:space:]]*$//g' " # delete trailing whitespace from a file
 alias clip=xsel -i
 
+# Copy last command into clipboard. See man zshbuiltins for info on fc
+alias clc='fc -ln -1 | clip'
+
 # SURF
 alias vpn='eduvpn-cli connect -n 1'
 
