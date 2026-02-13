@@ -16,6 +16,9 @@ alias clip=xsel -i
 # Copy last command into clipboard. See man zshbuiltins for info on fc
 alias clc='fc -ln -1 | clip'
 
+# Edit aliases
+alias ealias='e ~/.config/zsh/aliases && source ~/.config/zsh/aliases'
+
 # SURF
 alias vpn='eduvpn-cli connect -n 1'
 
