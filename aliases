@@ -1,6 +1,11 @@
-alias rm='trash-put'
+# The alphabet
 alias e=nvim
+alias g=git
+alias l=exa
+alias m='make'
 alias o=xdg-open
+
+# Inbox: To be organized
 alias ds='date +%F-%s'
 alias wl='wc -l'
 alias @='echo "ber@berk.es" | xsel -i'
@@ -15,13 +20,11 @@ alias clc='fc -ln -1 | clip'
 alias vpn='eduvpn-cli connect -n 1'
 
 # Git
-alias g=git
 alias gp="git push"
 alias gpf="git push --force-with-lease"
 alias gf="git flow"
 
 # Make
-alias m='make'
 alias mt='make test'
 
 # bundle exec
@@ -47,13 +50,13 @@ alias pc='podman-compose'
 
 # Coreutils
 alias ls=exa
-alias l=exa
 alias ll='ls -hlF --icons --git'
 alias lll='ll --all'
 alias la='ls -A'
 alias lt='ll --tree'
 alias cat='bat'
 alias fd=fdfind
+alias rm='trash-put'
 
 # Cargo and Rust
 alias cr='cargo run'
