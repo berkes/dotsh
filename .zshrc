@@ -81,6 +81,15 @@ eval "$(zoxide init zsh --cmd=cd)"
 ## Enable direnv, the automatic dir env loader
 eval "$(direnv hook zsh)"
 
+## gtasks and rchore, commandline google task clients
+if [[ -f "${HOME}/.gtasks/.env" ]]; then
+    source "${HOME}/.gtasks/.env" # Loads secrets
+    export GTASKS_CLIENT_ID
+    export GTASKS_CLIENT_SECRET
+    export GOOGLE_CLIENT_ID
+    export GOOGLE_CLIENT_SECRET
+fi
+
 ## Set the title of the terminal
 # Use the current directory as the title of the terminal
 # But replace the home directory with ~

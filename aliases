@@ -74,5 +74,10 @@ alias pyr='pipenv run'
 # Tools
 alias btm=bottom
 
+# todo, gtasks
+alias t=gtasks
+alias tl="gtasks tasks -l Inbox view --format csv | qsv select 1,2,4,5 | qsv table"
+alias tls="gtasks tasks -l Surf view --format csv | qsv select 1,2,4,5 | qsv table"
+
 # OS
 alias zz='xdg-screensaver lock'
