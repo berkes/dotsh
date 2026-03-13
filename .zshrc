@@ -57,28 +57,28 @@ path+=$HOME/src/jdt-ls/bin
 
 ## App and tool configuration
 
-### FZF
+## FZF, the fuzzy finder
 # Setting fd as the default source for fzf
 # fd is an alias for fdfind, we use the canonical, non-aliased for portability
 show_file_or_dir_preview="if [ -d {} ]; then exa --tree --color=always {} ; else bat --color=always --decorations=never {} ; fi"
 export FZF_CTRL_T_OPTS="--preview '$show_file_or_dir_preview'"
 export FZF_ALT_C_OPTS="--preview 'exa --tree --color=always {}' | head -n 200'"
 
-### Generative Art Projects
+## Generative Art Projects
 export SAVES_LOCATION="${HOME}/Dropbox/genArt/"
 
-### Diodon, the clipboard manager
+## Diodon, the clipboard manager
 export ZEITGEIST_DATABASE_PATH=:memory:
 
+## Atuin, the shell history manager
 autoload -U add-zsh-hook
-
 eval "$(atuin init zsh)"
 
-## Enable zoxide, the directory jumping tool
+## zoxide, the directory jumping tool
 # Must be somewhere at the end, after compinit and PATH and such
 eval "$(zoxide init zsh --cmd=cd)"
 
-## Enable direnv, the automatic dir env loader
+## direnv, the automatic dir env loader
 eval "$(direnv hook zsh)"
 
 ## gtasks and rchore, commandline google task clients
