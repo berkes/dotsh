@@ -81,6 +81,12 @@ eval "$(zoxide init zsh --cmd=cd)"
 ## direnv, the automatic dir env loader
 eval "$(direnv hook zsh)"
 
+## git-extras autocompletion.
+# Will not load because "git" already has autocomplete and
+# that would override the git default completion.
+# Manually sourcing seems the way to go
+source /usr/share/zsh/vendor-completions/_git-extras
+
 ## gtasks and rchore, commandline google task clients
 if [[ -f "${HOME}/.gtasks/.env" ]]; then
     source "${HOME}/.gtasks/.env" # Loads secrets
